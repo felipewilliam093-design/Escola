@@ -9,7 +9,13 @@ public class Aluno {
     private String email;
     private String telefone;
     private String nascimento;
-
+    
+    public Aluno(String nome, String email, String telefone, String nascimento){
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.nascimento = nascimento;
+    }
     
     public String getNome() {
         return nome;
