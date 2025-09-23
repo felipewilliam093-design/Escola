@@ -61,15 +61,15 @@ public class Resultado extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel2.setText("Nome");
+        jLabel2.setText("Nome:");
 
         jLNome.setText("jLabel3");
 
-        jLabel3.setText("Email");
+        jLabel3.setText("Email:");
 
-        jLabel4.setText("Telefone");
+        jLabel4.setText("Telefone:");
 
-        jLabel5.setText("Data de Nascimento");
+        jLabel5.setText("Data de Nascimento:");
 
         jLEmail.setText("jLabel6");
 
@@ -165,7 +165,7 @@ public class Resultado extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(73, 73, 73)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
