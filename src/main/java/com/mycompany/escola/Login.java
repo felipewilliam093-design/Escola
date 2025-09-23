@@ -4,6 +4,8 @@
  */
 package com.mycompany.escola;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author william.flima4
@@ -111,8 +113,8 @@ public class Login extends javax.swing.JFrame {
                         .addGap(155, 155, 155))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100))
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,8 +138,21 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTLoginActionPerformed
 
     private void jBEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEntrarActionPerformed
-        System.out.println("Login: " + jTLogin.getText());
-        System.out.println("Senha: " + String.valueOf(jPSenha.getPassword()));
+        
+        
+        if ("admin".equals(jTLogin.getText())){
+            if ("123456".equals(String.valueOf(jPSenha.getPassword()))){
+                Principal p = new Principal();
+                p.setVisible(true);
+                this.dispose();
+                
+                JOptionPane.showMessageDialog(rootPane, "Bem Vindo!");
+                
+            }else {
+                JOptionPane.showMessageDialog(rootPane, "Senha inválida!");
+            }
+           
+        }
     }//GEN-LAST:event_jBEntrarActionPerformed
 
     /**
