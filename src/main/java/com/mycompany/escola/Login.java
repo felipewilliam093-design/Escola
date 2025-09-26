@@ -138,20 +138,19 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jTLoginActionPerformed
 
     private void jBEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBEntrarActionPerformed
-        
-        
-        if ("admin".equals(jTLogin.getText())){
-            if ("123456".equals(String.valueOf(jPSenha.getPassword()))){
+
+        if ("admin".equals(jTLogin.getText())) {
+            if ("123456".equals(String.valueOf(jPSenha.getPassword()))) {
                 Principal p = new Principal();
                 p.setVisible(true);
                 this.dispose();
-                
+
                 JOptionPane.showMessageDialog(rootPane, "Bem Vindo!");
-                
-            }else {
+
+            } else {
                 JOptionPane.showMessageDialog(rootPane, "Senha inválida!");
             }
-           
+
         }
     }//GEN-LAST:event_jBEntrarActionPerformed
 
